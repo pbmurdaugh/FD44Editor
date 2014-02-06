@@ -234,7 +234,9 @@ bios_t FD44Editor::readFromBIOS(const QByteArray & data)
 
         // Setting up module structure depending on detected module version
         // X79 motherboards have similar FD44 module header, but different data format.
-        bool x79board = (bios.motherboard_name.indexOf("X79") != -1 || bios.motherboard_name.indexOf("Rampage-IV") != -1);
+        bool x79board = (bios.motherboard_name.indexOf("X79") != -1 
+        	|| bios.motherboard_name.indexOf("Rampage-IV") != -1
+        	|| bios.motherboard_name.indexOf("RAMPAGE-IV") != -1);
         
 		// C20x motherboards have similar FD44 module header, but different data format.
 		// TODO: replace detection algorithm, too many exclusions
