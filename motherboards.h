@@ -385,7 +385,13 @@ const motherboard_t SUPPORTED_MOTHERBOARDS_LIST[] =
         None,
         QByteArray(),
     },{
-        "SABERTOOTH-X79", 
+        "RAMPAGE-IV-BLACK-EDITION",
+        GbE,
+        QByteArray(),
+        None,
+        QByteArray(),
+    },{
+    	"SABERTOOTH-X79", 
         GbE,
         QByteArray(),
         Long,
